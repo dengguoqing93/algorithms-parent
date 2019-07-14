@@ -1,6 +1,6 @@
 package org.guoqing.sort;
 
-import org.guoqing.template.Example;
+import org.guoqing.sort.template.Example;
 
 /**
  * 插入排序
@@ -14,7 +14,7 @@ public class Insertion extends Example {
         int N = a.length;
         for (int i = 0; i < N; i++) {
             for (int j = i;j>0&&less(a[j],a[j-1]);j--) {
-                exch(a,j,j-1);
+                exchange(a,j,j-1);
             }
         }
     }

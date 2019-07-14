@@ -1,6 +1,8 @@
 package org.guoqing.sort;
 
-import org.guoqing.template.Example;
+import org.guoqing.sort.template.Example;
+
+import java.util.Arrays;
 
 /**
  * 选择排序
@@ -18,8 +20,9 @@ public class Selection extends Example {
                 if (less(a[j], a[min])) {
                     min = j;
                 }
-                exch(a, i, min);
+                exchange(a, i, min);
             }
         }
     }
+
 }

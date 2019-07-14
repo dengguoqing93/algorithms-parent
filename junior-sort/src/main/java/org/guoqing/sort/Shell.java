@@ -1,8 +1,10 @@
 package org.guoqing.sort;
 
-import org.guoqing.template.Example;
+import org.guoqing.sort.template.Example;
 
 /**
+ * 希尔排序
+ *
  * @author guoqing
  * @since ： 2019/1/13 15:42
  */
@@ -18,7 +20,7 @@ public class Shell extends Example {
         while (h > 1) {
             for (int i = h; i < N; i++) {
                 for (int j = i; j >= h && less(a[j], a[j - h]); j -= h) {
-                    exch(a, j, j - h);
+                    exchange(a, j, j - h);
                 }
             }
             h = h / 3;
